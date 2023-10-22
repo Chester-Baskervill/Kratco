@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="D:\Rabota\Кратко\css\style.css">
+  <title>Кратко</title>
+</head>
+<body>
+  <header>
+    <h1>Кратко!</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="home.html">Главная</a></li>
+      <li><a href="profile.html">Профиль</a></li>
+      <li><a href="settings.html">Настройки</a></li>
+      <li><a href="about.html">О нас</a></li>
+    </ul>
+  </nav>
+  <main>
+  
+    <h1>Введите свой никнейм</h1>
+    <form action="index.html" method="get">
+      <input type="text" name="nickname" required>
+      <input type="submit" value="Продолжить">
+    </form>
+
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Чат</title>
+</head>
+<body>
+  <h1>Чат</h1>
+  <div id="chat-container"></div>
+
+  <form id="message-form">
+    <input type="text" id="message-input">
+    <input type="submit" value="Отправить">
+  </form>
+
+  <script>
+    // Функция для добавления нового сообщения в чат
+    function addMessage(nickname, message) {
+      var chatContainer = document.getElementById("chat-container");
+      var messageElement = document.createElement("p");
+      messageElement.innerHTML = "<strong>" + nickname + ":</strong> " + message;
+      chatContainer.appendChild(messageElement);
+    }
+
+    // Обработка отправки сообщения
+    document.getElementById("message-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var nickname = decodeURIComponent(location.search.match(/(\?|&)nickname=([^&]+)/)[2]);
+      var messageInput = document.getElementById("message-input");
+      var message = messageInput.value;
+      messageInput.value = "";
+      addMessage(nickname, message);
+    });
+  </script>
+</body>
+</html>
+
+    <article>
+  </main>
+  <footer>
+    <p>&copy; 2023 Кратко. Все права защищены.</p>
+    <p><a href="terms.html">Условия использования</a> | <a href="privacy.html">Политика конфиденциальности</a></p>
+  </footer>
+</body>
+</html>
