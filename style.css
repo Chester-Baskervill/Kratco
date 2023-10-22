@@ -1,0 +1,61 @@
+/* Общие стили */
+body {
+  background-color: #121212; /* черный фон */
+  color: #E0E0E0;  /* серый текст */
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  padding: 20px;
+}
+
+nav {
+  background-color: #1E1E1E; /* темно-серый фон для навигации */
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #E0E0E0; /* удерживать ссылки серыми */
+  text-decoration: none;
+}
+
+main {
+  padding: 20px;
+}
+
+input {
+  color: #000; /* черный текст в полях ввода для контраста */
+  background-color: #E0E0E0; /* серый фон для полей ввода */
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #424242; /* светло-серая кнопка */
+  color: #E0E0E0; /* черный текст на кнопке */
+}
+
+footer {
+  background-color: #1E1E1E; /* темно-серый фон для footer */
+  color: #E0E0E0; /* серый текст */
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer a {
+  color: #E0E0E0; /* удерживать ссылки в footer серыми */
+}
